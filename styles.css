@@ -2,6 +2,7 @@ body {
 font-family: Arial, sans-serif;
 margin: 0;
 padding: 0;
+background-color: white;
 }
 .container {
 max-width: 1000px;
@@ -11,13 +12,17 @@ margin: 0 auto;
 background-color: #333;
 color: white;
 padding: 20px;
+padding-bottom: 30px;
+text-align: center;
 }
 .header h1 {
 margin: 0;
 }
 .nav {
     list-style: none;
-    padding: 0;
+    padding-bottom: 20px;
+    padding-right: 100 px;
+    padding-left: 100 px;
     margin: 0;
     display: flex;
     justify-content: space-between;
