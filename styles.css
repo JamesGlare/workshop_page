@@ -50,3 +50,53 @@ margin-top: 0;
 .content p {
 line-height: 1.5;
 }
+.speakers-list {
+    list-style-type: none; /* Removes bullets */
+    padding: 0; /* Removes default padding */
+}
+
+.speakers-list li {
+    display: flex;
+    align-items: center; /* Aligns items vertically */
+    margin-bottom: 20px; /* Spacing between each speaker */
+    padding: 10px;
+    border: 1px solid #e0e0e0; /* Optional border around each speaker */
+    border-radius: 10px; /* Rounded corners for the border */
+}
+
+.speakers-list img {
+    width: 100px;  /* Desired width */
+    height: 100px; /* Desired height */
+    object-fit: cover; /* This will crop the image to cover the dimensions without distorting it */
+    object-position: center; /* Adjust the alignment of the cropped image */
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.speakers-list h3 {
+    margin: 0; /* Removes default margin */
+}
+
+.speakers-list p {
+    margin: 5px 0 0 0; /* Adds a little spacing between the name and bio */
+    font-size: 14px; /* Adjusts font size for the bio */
+    color: #555; /* Makes bio text a bit softer in color */
+}
+footer {
+    background-color: #333; /* Color to match the navbar */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-content p {
+    margin: 5px 0; /* Add a bit of margin between the two paragraphs */
+}
+
+.footer-content a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
