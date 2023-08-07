@@ -9,14 +9,17 @@ max-width: 1000px;
 margin: 0 auto;
 }
 .header {
-background-color: #333;
 color: white;
 padding: 20px;
 padding-bottom: 30px;
 text-align: center;
+max-width: 1000px;
 }
 .header h1 {
 margin: 0;
+}
+.top {
+    background-color: #333;   /* Dark background for the navbar */
 }
 .nav {
     list-style: none;
@@ -26,7 +29,8 @@ margin: 0;
     margin: 0;
     display: flex;
     justify-content: space-between;
-    background-color: #333;   /* Dark background for the navbar */
+    max-width: 1000px;
+
 }
 
 .nav li {
