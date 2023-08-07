@@ -4,7 +4,7 @@ margin: 0;
 padding: 0;
 }
 .container {
-max-width: 1200px;
+max-width: 1000px;
 margin: 0 auto;
 }
 .header {
@@ -54,7 +54,11 @@ line-height: 1.5;
     list-style-type: none; /* Removes bullets */
     padding: 0; /* Removes default padding */
 }
-
+.speaker {
+    display: flex;         /* Use flex layout */
+    align-items: left;   /* Center items vertically */
+    margin-bottom: 20px;   /* Space between each speaker */
+}
 .speakers-list li {
     display: flex;
     align-items: center; /* Aligns items vertically */
@@ -77,8 +81,14 @@ line-height: 1.5;
     margin: 0; /* Removes default margin */
 }
 
+.affiliation {
+    display: block;        /* Make it occupy its own line */
+    color: grey;           /* Set color to grey */
+    margin-bottom: 5px;    /* Space between affiliation and bio */
+}
 .speakers-list p {
-    margin: 5px 0 0 0; /* Adds a little spacing between the name and bio */
+    display: block;
+    margin: 20px 0 0 0; /* Adds a little spacing between the name and bio */
     font-size: 14px; /* Adjusts font size for the bio */
     color: #555; /* Makes bio text a bit softer in color */
 }
