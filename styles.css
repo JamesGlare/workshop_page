@@ -16,21 +16,30 @@ padding: 20px;
 margin: 0;
 }
 .nav {
-list-style: none;
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;   /* Dark background for the navbar */
 }
+
 .nav li {
-margin: 10px;
+    margin: 0 15px;   /* Adjust as needed to separate the items */
 }
+
 .nav a {
-color: rgb(24, 126, 99);
-text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;   /* Using Times New Roman as a common serif font */
+    font-size: 20px;   /* Adjust as needed for size */
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;   /* Padding around the links for better click area and spacing */
+    transition: background-color 0.3s;   /* Transition for hover effect */
 }
+
 .nav a:hover {
-text-decoration: underline;
+    background-color: #555;   /* Slightly lighter color on hover */
+    text-decoration: none;   /* No underline on hover, but you can remove this if you prefer the underline */
 }
 .content {
 padding: 20px;
