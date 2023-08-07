@@ -1,8 +1,52 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+}
+.container {
+max-width: 1200px;
+margin: 0 auto;
+}
+.header {
+background-color: #333;
+color: white;
+padding: 20px;
+}
+.header h1 {
+margin: 0;
+}
+.nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;   /* Dark background for the navbar */
 }
 
-h1 {
-    color: #333;
+.nav li {
+    margin: 0 15px;   /* Adjust as needed to separate the items */
+}
+
+.nav a {
+    font-family: 'Times New Roman', Times, serif;   /* Using Times New Roman as a common serif font */
+    font-size: 20px;   /* Adjust as needed for size */
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;   /* Padding around the links for better click area and spacing */
+    transition: background-color 0.3s;   /* Transition for hover effect */
+}
+
+.nav a:hover {
+    background-color: #555;   /* Slightly lighter color on hover */
+    text-decoration: none;   /* No underline on hover, but you can remove this if you prefer the underline */
+}
+.content {
+padding: 20px;
+}
+.content h2 {
+margin-top: 0;
+}
+.content p {
+line-height: 1.5;
 }
