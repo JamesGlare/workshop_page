@@ -6,18 +6,20 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <div class="header">
-      <h1>ML with new Compute Paradigms (MLNCP) @ NeurIPS 2023</h1>
+    <div class="top">
+        <div class="header">
+        <h1>ML with new Compute Paradigms (MLNCP) @ NeurIPS 2023</h1>
+        </div>
+        <ul class="nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#call_for_papers">Call for Papers</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#speakers">Speakers</a></li>
+        <li><a href="#organisers">Organisers</a></li>
+        <li><a href="#sponsors">Sponsors</a></li>
+        </ul>
     </div>
-    <ul class="nav">
-      <li><a href="#">Home</a></li>
-      <li><a href="#call_for_papers">Call for Papers</a></li>
-      <li><a href="#schedule">Schedule</a></li>
-      <li><a href="#speakers">Speakers</a></li>
-      <li><a href="#organisers">Organisers</a></li>
-      <li><a href="#sponsors">Sponsors</a></li>
-    </ul>
+    <div class="container">
     <div class="content", id="abstract">
       <h2>Welcome to the MLNCP NeurIPS Workshop 2023!</h2>
       <p>This workshop aims to bring together ML researchers with academic and industrial researchers building novel AI accelerators.
@@ -51,40 +53,83 @@
     </div>
     <div class="content", id="schedule">
         <h2>Schedule</h2>
-        TBD
+        <p> <b>Warning:</b> The schedule below is preliminary! </p>
+
+        <b>Morning Session:</b>
+        <ul>
+            <li>09:00 - 09:10: Opening remarks (10 min)</li>
+            <li>09:10 - 09:30: Prof Peter McMahon (15 min) + 5 min Q&amp;A</li>
+            <li>09:30 - 09:40: Contributed Talk I (8 min) + 2 min Q&amp;A</li>
+            <li>09:40 - 09:50: Contributed Talk II (8 min) + 2 min Q&amp;A</li>
+            <li>09:50 - 10:10: Prof Jesús del Alamo (15 min) + 5 min Q&amp;A</li>
+            <li>10:10 - 10:25: Break (15 min)</li>
+            <li>10:25 - 10:35: Contributed Talk III (8 min) + 2 min Q&amp;A</li>
+            <li>10:35 - 10:45: Contributed Talk IV (8 min) + 2 min Q&amp;A</li>
+            <li>10:45 - 11:05: Prof Julie Grollier (15 min) + 5 min Q&amp;A</li>
+            <li>11:05 - 11:25: Prof Ruqi Zhang (15 min) + 5 min Q&amp;A</li>
+        </ul>
+
+        <b>Poster Session and Lunch Break:</b>
+        <ul>
+            <li>11:25 - 00:30: Poster session I (1 hour)</li>
+            <li>00:30 - 13:30: Poster session I</li>
+        </ul>
+
+        <b>Afternoon Session:</b>
+        <ul>
+            <li>01:30 - 01:50: Prof Mihaela van der Schaar (15 min) + 5 min Q&amp;A</li>
+            <li>01:50 - 02:00: Contributed Talk V (8 min) + 2 min Q&amp;A</li>
+            <li>02:00 - 02:10: Contributed Talk VI (8 min) + 2 min Q&amp;A</li>
+            <li>02:10 - 02:30: Dr Kailash Gopalakrishnan (15 min) + 5 min Q&amp;A</li>
+            <li>02:30 - 04:00: Poster session II and Coffee Break (1.5 hours)</li>
+            <li>04:00 - 05:00: Panel discussion (1 hour)</li>
+        </ul>
+
     </div>
     <div class="content", id="speakers">
         <h2>Speakers</h2>
         <ul class="speakers-list">
-            <li>
+            <li class="speaker">
                 <img src="images/peter_mcmahon.jpg" alt="Speaker 1">
-                <h3>Prof Peter McMahon (Cornell) </h3>
-                <p>Expert in quantum and classical unconventional computers, including photonic AI accelerators.</p>
+                <div class="speaker-info">
+                    <h3>Prof Peter McMahon</h3> <span class="affiliation"> Cornell University </span>
+                    <p>Expert in quantum and classical unconventional computers, including photonic AI accelerators.</p>
+                </div>
             </li>
-            <li>
+            <li class="speaker">
                 <img src="images/jesus_del_alamo.jpg" alt="Speaker 2">
-                <h3>Prof Jesús del Alamo</h3>
-                <p>Expert in electronic, magnetic, optical and quantum materials and devices, especially nanoscale materials, devices, and systems.</p>
+                <div class="speaker-info">
+                    <h3>Prof Jesus del Alamo</h3> <span class="affiliation"> MIT </span>
+                    <p>Expert in electronic, magnetic, optical and quantum materials and devices, especially nanoscale materials, devices, and systems.</p>
+                </div>
             </li>
-            <li>
+            <li class="speaker">
                 <img src="images/julie_grollier.jpg" alt="Speaker 3">
-                <h3>Prof Julie Grollier</h3>
-                <p>Expert in building and designing neuromorphic devices, memristors, and spintronics.</p>
+                <div class="speaker-info">
+                    <h3>Prof Julie Grollier</h3><span class="affiliation"> Thales/CNRS</span>
+                    <p>Expert in building and designing neuromorphic devices, memristors, and spintronics.</p>
+                </div>
             </li>
-            <li>
+            <li class="speaker">
                 <img src="images/kailash_gopalakrishnan.jpg" alt="Speaker 2">
-                <h3>Dr Kailash Gopalakrishnan</h3>
-                <p> Expert in AI accelerator architecture, system design, low-bit precision machine-learning, and hardware-software codesign.</p>
+                <div class="speaker-info">
+                    <h3>Dr Kailash Gopalakrishnan</h3> <span class="affiliation"> Encharge.ai</span>
+                    <p> Expert in AI accelerator architecture, system design, low-bit precision machine-learning, and hardware-software codesign.</p>
+                </div>
             </li>
-            <li>
+            <li class="speaker">
                 <img src="images/mihaela_van_der_schaar.jpg" alt="Speaker 2">
-                <h3>Prof Mihaele van der Schaar</h3>
-                <p> Expert in ML theory.</p>
+                <div class="speaker-info">
+                    <h3>Prof Mihaele van der Schaar</h3> <span class="affiliation"> University of Cambridge</span>
+                    <p> Expert in ML theory.</p>
+                </div>
             </li>
-            <li>
+            <li class="speaker">
                 <img src="images/ruqi_zhang.jpg" alt="Speaker 2">
-                <h3>Prof Ruqi Zhang</h3>
-                <p> Expert in low-precision machine-learning and approximate inference.</p>
+                <div class="speaker-info">
+                    <h3>Prof Ruqi Zhang</h3> <span class="affiliation"> Purdue University </span>
+                    <p> Expert in low-precision machine-learning and approximate inference.</p>
+                </div>
             </li>
         </ul>
     </div>

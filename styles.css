@@ -1,27 +1,40 @@
 body {
-font-family: Arial, sans-serif;
+    font-family: Calibri, "Trebuchet MS", Arial, sans-serif;
 margin: 0;
 padding: 0;
+background-color: #9090A0;
 }
 .container {
-max-width: 1200px;
+max-width: 1000px;
 margin: 0 auto;
+background-color: white;
+box-shadow: 
+        15px 0 15px -10px rgba(255, 255, 255, 0.7),  /* Right glow */
+        -15px 0 15px -10px rgba(255, 255, 255, 0.7); /* Left glow */
 }
 .header {
-background-color: #333;
 color: white;
 padding: 20px;
+padding-bottom: 30px;
+text-align: center;
+max-width: 1000px;
 }
 .header h1 {
 margin: 0;
 }
+.top {
+    background-color: #333333;   /* Dark background for the navbar */
+    display: grid;
+    place-items: center;
+}
 .nav {
     list-style: none;
-    padding: 0;
+    padding-bottom: 20px;
     margin: 0;
     display: flex;
     justify-content: space-between;
-    background-color: #333;   /* Dark background for the navbar */
+    max-width: 1000px;
+
 }
 
 .nav li {
@@ -54,7 +67,11 @@ line-height: 1.5;
     list-style-type: none; /* Removes bullets */
     padding: 0; /* Removes default padding */
 }
-
+.speaker {
+    display: flex;         /* Use flex layout */
+    align-items: left;   /* Center items vertically */
+    margin-bottom: 20px;   /* Space between each speaker */
+}
 .speakers-list li {
     display: flex;
     align-items: center; /* Aligns items vertically */
@@ -77,8 +94,14 @@ line-height: 1.5;
     margin: 0; /* Removes default margin */
 }
 
+.affiliation {
+    display: block;        /* Make it occupy its own line */
+    color: grey;           /* Set color to grey */
+    margin-bottom: 5px;    /* Space between affiliation and bio */
+}
 .speakers-list p {
-    margin: 5px 0 0 0; /* Adds a little spacing between the name and bio */
+    display: block;
+    margin: 20px 0 0 0; /* Adds a little spacing between the name and bio */
     font-size: 14px; /* Adjusts font size for the bio */
     color: #555; /* Makes bio text a bit softer in color */
 }
