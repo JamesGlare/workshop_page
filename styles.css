@@ -105,6 +105,22 @@ line-height: 1.5;
     font-size: 14px; /* Adjusts font size for the bio */
     color: #555; /* Makes bio text a bit softer in color */
 }
+
+.sponsor-grid {
+    display: flex; /* makes the container a flexible box layout */
+    flex-wrap: wrap; /* allows the items to wrap as needed */
+    justify-content: center; /* horizontally centers the images in the container */
+    gap: 30px; /* space between the images, both vertically and horizontally */
+    max-width: 800px; /* maximum width of the grid */
+    margin: 0 auto; /* centers the grid in its container */
+}
+
+.sponsor-grid img {
+    width: 150px; /* width of the sponsor images */
+    height: auto; /* maintains the aspect ratio */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* optional: a subtle shadow around each image */
+}
+
 footer {
     background-color: #333; /* Color to match the navbar */
     color: white;
