@@ -2,11 +2,15 @@ body {
 font-family: Arial, sans-serif;
 margin: 0;
 padding: 0;
-background-color: white;
+background-color: #9090A0;
 }
 .container {
 max-width: 1000px;
 margin: 0 auto;
+background-color: white;
+box-shadow: 
+        15px 0 15px -10px rgba(255, 255, 255, 0.7),  /* Right glow */
+        -15px 0 15px -10px rgba(255, 255, 255, 0.7); /* Left glow */
 }
 .header {
 color: white;
@@ -19,7 +23,7 @@ max-width: 1000px;
 margin: 0;
 }
 .top {
-    background-color: #333;   /* Dark background for the navbar */
+    background-color: #333333;   /* Dark background for the navbar */
     display: grid;
     place-items: center;
 }
