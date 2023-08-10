@@ -120,7 +120,9 @@ line-height: 1.5;
     height: auto; /* maintains the aspect ratio */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* optional: a subtle shadow around each image */
 }
-
+#contact{
+    text-align: center;
+}
 footer {
     background-color: #333; /* Color to match the navbar */
     color: white;
