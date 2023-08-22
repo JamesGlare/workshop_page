@@ -2,7 +2,7 @@ body {
     font-family: Calibri, "Trebuchet MS", Arial, sans-serif;
 margin: 0;
 padding: 0;
-background-color: #1D548D;
+background-color: white;
 }
 .container {
 max-width: 1200px;
@@ -16,7 +16,7 @@ box-shadow:
 .top {
     background: url('images/big_banner.jpg') no-repeat center center;
     background-size: cover; /* This ensures the banner image covers the entire div */
-    padding: 40px 0; /* This gives some space above and below the content inside the .top div */
+    padding: 10px 0; /* This gives some space above and below the content inside the .top div */
     position: relative; /* Makes it a context for positioning */
 }
 
@@ -24,7 +24,7 @@ box-shadow:
     position: relative;
     list-style-type: none; /* Removes bullet points */
     text-align: center; /* Centers the navigation bar items */
-    padding-top: 20px; /* Margin from the top of the banner */
+    padding-top: 10px; /* Margin from the top of the banner */
     flex-wrap: wrap;
     gap: 10px;
 }
