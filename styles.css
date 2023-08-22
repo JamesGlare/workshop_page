@@ -2,7 +2,7 @@ body {
     font-family: Calibri, "Trebuchet MS", Arial, sans-serif;
 margin: 0;
 padding: 0;
-background-color: #9090A0;
+background-color: #ceced8;
 }
 .container {
 max-width: 1000px;
@@ -12,47 +12,46 @@ box-shadow:
         15px 0 15px -10px rgba(255, 255, 255, 0.7),  /* Right glow */
         -15px 0 15px -10px rgba(255, 255, 255, 0.7); /* Left glow */
 }
-.header {
-color: white;
-padding: 20px;
-padding-bottom: 30px;
-text-align: center;
-max-width: 1000px;
-}
-.header h1 {
-margin: 0;
-}
-.top {
-    background-color: #333333;   /* Dark background for the navbar */
-    display: grid;
-    place-items: center;
-}
-.nav {
-    list-style: none;
-    padding-bottom: 20px;
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-    max-width: 1000px;
 
+.top {
+    background: url('images/big_banner.jpg') no-repeat center center;
+    background-size: cover; /* This ensures the banner image covers the entire div */
+    padding: 40px 0; /* This gives some space above and below the content inside the .top div */
+    position: relative; /* Makes it a context for positioning */
+}
+
+.nav {
+    position: relative;
+    list-style-type: none; /* Removes bullet points */
+    text-align: center; /* Centers the navigation bar items */
+    padding-top: 20px; /* Margin from the top of the banner */
 }
 
 .nav li {
-    margin: 0 15px;   /* Adjust as needed to separate the items */
+    display: inline; /* Display list items in a line */
+    margin-right: 20px; /* Space between items */
 }
 
 .nav a {
-    font-family: 'Times New Roman', Times, serif;   /* Using Times New Roman as a common serif font */
-    font-size: 20px;   /* Adjust as needed for size */
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;   /* Padding around the links for better click area and spacing */
-    transition: background-color 0.3s;   /* Transition for hover effect */
+    text-decoration: none; /* Removes underlines */
+    color: white; /* Text color */
+    background-color: rgba(0, 0, 0, 0.05); /* Optional: Adds a semi-transparent background for better visibility */
+    padding: 5px 10px; /* Padding around each link */
+    border-radius: 4px; /* Optional: Rounded corners for each link */
 }
 
 .nav a:hover {
-    background-color: #555;   /* Slightly lighter color on hover */
-    text-decoration: none;   /* No underline on hover, but you can remove this if you prefer the underline */
+    color: #1394a3; /* Lightens text color on hover */
+}
+
+.header {
+    text-align: center; /* Centers the header text */
+    margin-top: 50px; /* Optional: Adds some space between the navbar and the header */
+}
+
+.header h1 {
+    color: white; /* Makes the title text white for better visibility against the banner */
+    font-size: 24px; /* Adjust as needed */
 }
 .content {
 padding: 20px;
