@@ -2,10 +2,10 @@ body {
     font-family: Calibri, "Trebuchet MS", Arial, sans-serif;
 margin: 0;
 padding: 0;
-background-color: white;
+background-color: #1D548D;
 }
 .container {
-max-width: 1000px;
+max-width: 400px;
 margin: 0 auto;
 background-color: white;
 box-shadow: 
@@ -54,7 +54,7 @@ box-shadow:
 
 .header h1 {
     color: white; /* Makes the title text white for better visibility against the banner */
-    font-size: 24px; /* Adjust as needed */
+    font-size: 32px; /* Adjust as needed */
 }
 .content {
 padding: 20px;
