@@ -2,7 +2,7 @@ body {
     font-family: Calibri, "Trebuchet MS", Arial, sans-serif;
 margin: 0;
 padding: 0;
-background-color: #ceced8;
+background-color: #fafafa;
 }
 .container {
 max-width: 1000px;
@@ -25,11 +25,14 @@ box-shadow:
     list-style-type: none; /* Removes bullet points */
     text-align: center; /* Centers the navigation bar items */
     padding-top: 20px; /* Margin from the top of the banner */
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .nav li {
     display: inline; /* Display list items in a line */
     margin-right: 20px; /* Space between items */
+    margin-bottom: 10px;
 }
 
 .nav a {
