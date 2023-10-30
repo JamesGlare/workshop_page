@@ -116,8 +116,8 @@ line-height: 1.5;
 }
 
 .sponsor-grid img {
-    width: 150px; /* width of the sponsor images */
-    height: auto; /* maintains the aspect ratio */
+    width: auto; /* width of the sponsor images */
+    height: 200px; /* maintains the aspect ratio */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* optional: a subtle shadow around each image */
 }
 
