@@ -63,6 +63,24 @@ margin-top: 0;
 .content p {
 line-height: 1.5;
 }
+.highlight-box {
+    background-color: #f8f8ff; /* A light background color */
+    border: 1px solid #dcdcdc; /* A light grey border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 20px; /* Some padding around the content */
+    margin: 20px 0; /* Some margin at the top and bottom */
+}
+.highlight-box p {
+margin: 0; /* Remove default paragraph margins */
+padding: 0;
+}
+.highlight-box p.title {
+font-weight: bold; /* Make title bold */
+margin-bottom: 15px; /* Add some space below the title */
+}
+.highlight-box p + p {
+padding-top: 10px; /* Add space between paragraphs */
+}
 .speakers-list {
     list-style-type: none; /* Removes bullets */
     padding: 0; /* Removes default padding */
