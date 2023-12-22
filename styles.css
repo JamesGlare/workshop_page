@@ -2,57 +2,59 @@ body {
     font-family: Calibri, "Trebuchet MS", Arial, sans-serif;
 margin: 0;
 padding: 0;
-background-color: #9090A0;
+background-color: white;
 }
 .container {
-max-width: 1000px;
+max-width: 1200px;
 margin: 0 auto;
 background-color: white;
 box-shadow: 
         15px 0 15px -10px rgba(255, 255, 255, 0.7),  /* Right glow */
         -15px 0 15px -10px rgba(255, 255, 255, 0.7); /* Left glow */
 }
-.header {
-color: white;
-padding: 20px;
-padding-bottom: 30px;
-text-align: center;
-max-width: 1000px;
-}
-.header h1 {
-margin: 0;
-}
-.top {
-    background-color: #333333;   /* Dark background for the navbar */
-    display: grid;
-    place-items: center;
-}
-.nav {
-    list-style: none;
-    padding-bottom: 20px;
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-    max-width: 1000px;
 
+.top {
+    background: url('images/big_banner.jpg') no-repeat center center;
+    background-size: cover; /* This ensures the banner image covers the entire div */
+    padding: 10px 0; /* This gives some space above and below the content inside the .top div */
+    position: relative; /* Makes it a context for positioning */
+}
+
+.nav {
+    position: relative;
+    list-style-type: none; /* Removes bullet points */
+    text-align: center; /* Centers the navigation bar items */
+    padding-top: 10px; /* Margin from the top of the banner */
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .nav li {
-    margin: 0 15px;   /* Adjust as needed to separate the items */
+    display: inline; /* Display list items in a line */
+    margin-right: 20px; /* Space between items */
+    margin-bottom: 10px;
 }
 
 .nav a {
-    font-family: 'Times New Roman', Times, serif;   /* Using Times New Roman as a common serif font */
-    font-size: 20px;   /* Adjust as needed for size */
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;   /* Padding around the links for better click area and spacing */
-    transition: background-color 0.3s;   /* Transition for hover effect */
+    text-decoration: none; /* Removes underlines */
+    color: white; /* Text color */
+    background-color: rgba(0, 0, 0, 0.05); /* Optional: Adds a semi-transparent background for better visibility */
+    padding: 5px 10px; /* Padding around each link */
+    border-radius: 4px; /* Optional: Rounded corners for each link */
 }
 
 .nav a:hover {
-    background-color: #555;   /* Slightly lighter color on hover */
-    text-decoration: none;   /* No underline on hover, but you can remove this if you prefer the underline */
+    color: #1394a3; /* Lightens text color on hover */
+}
+
+.header {
+    text-align: center; /* Centers the header text */
+    margin-top: 50px; /* Optional: Adds some space between the navbar and the header */
+}
+
+.header h1 {
+    color: white; /* Makes the title text white for better visibility against the banner */
+    font-size: 32px; /* Adjust as needed */
 }
 .content {
 padding: 20px;
@@ -62,6 +64,24 @@ margin-top: 0;
 }
 .content p {
 line-height: 1.5;
+}
+.highlight-box {
+    background-color: #f8f8ff; /* A light background color */
+    border: 1px solid #dcdcdc; /* A light grey border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 20px; /* Some padding around the content */
+    margin: 20px 0; /* Some margin at the top and bottom */
+}
+.highlight-box p {
+margin: 0; /* Remove default paragraph margins */
+padding: 0;
+}
+.highlight-box p.title {
+font-weight: bold; /* Make title bold */
+margin-bottom: 15px; /* Add some space below the title */
+}
+.highlight-box p + p {
+padding-top: 10px; /* Add space between paragraphs */
 }
 .speakers-list {
     list-style-type: none; /* Removes bullets */
@@ -105,7 +125,22 @@ line-height: 1.5;
     font-size: 14px; /* Adjusts font size for the bio */
     color: #555; /* Makes bio text a bit softer in color */
 }
-
+.submission-box {
+    border: 2px solid #007BFF; /* Blue border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Space inside the box */
+    background-color: #f0f8ff; /* Light blue background */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* subtle shadow for depth */
+}
+.submission-box h2 {
+    color: #003366; /* Dark blue text for heading */
+}
+.submission-box a {
+    color: #007BFF; /* Blue text for links */
+}
+.submission-box a:hover {
+    color: #003366; /* Darker blue on hover */
+}
 .sponsor-grid {
     display: flex; /* makes the container a flexible box layout */
     flex-wrap: wrap; /* allows the items to wrap as needed */
@@ -116,11 +151,13 @@ line-height: 1.5;
 }
 
 .sponsor-grid img {
-    width: 150px; /* width of the sponsor images */
-    height: auto; /* maintains the aspect ratio */
+    width: auto; /* width of the sponsor images */
+    height: 200px; /* maintains the aspect ratio */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* optional: a subtle shadow around each image */
 }
-
+#contact{
+    text-align: center;
+}
 footer {
     background-color: #333; /* Color to match the navbar */
     color: white;
