@@ -1,4 +1,4 @@
-# ML with New Compute Paradigms NeurIPS Workshop 2023
+# ML with New Compute Paradigms NeurIPS Workshop 2024
 This workshop aims to bring together ML researchers with academic and industrial researchers building novel AI accelerators.
 The goal is to enable interaction between the two groups and kick-start a new feedback cycle between models and accelerators and to enable hardware-model co-design. 
 We welcome relevant algorithmic or model-innovations as well as results demonstrated on accelerators in the following categories:
