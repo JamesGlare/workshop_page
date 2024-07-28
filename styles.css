@@ -18,7 +18,10 @@ body {
     background: url('images/big_banner.jpg') no-repeat center center;
     background-size: cover; /* This ensures the banner image covers the entire div */
     padding: 10px 0; /* This gives some space above and below the content inside the .top div */
-    position: relative; /* Makes it a context for positioning */
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures the navbar stays above other content */
 }
 
 .nav {
@@ -57,8 +60,8 @@ body {
 
 .header h1 {
     font-family: 'Montserrat', sans-serif;
-    color: white; /* Makes the title text white for better visibility against the banner */
-    font-size: 36px; /* Adjust as needed */
+    color: white;
+    font-size: 36px;
 }
 
 .content {
@@ -68,12 +71,6 @@ body {
     border-radius: 8px; /* Slightly rounded corners for sections */
 }
 
-#contact {
-    padding: 40px 20px;
-    background-color: #e0f7fa; /* Light blue background for contact section */
-    margin: 20px 0;
-    border-radius: 8px;
-}
 .content h2 {
     margin-top: 0;
     color: #003366; /* Dark blue color */
@@ -114,28 +111,35 @@ body {
 }
 
 .sponsor-grid img {
-    width: auto;
-    height: 200px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: auto; /* Width of the sponsor images */
+    height: 200px; /* Maintains the aspect ratio */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow around each image */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
 }
 
 .sponsor-grid img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05); /* Slightly enlarge the image */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
 }
 
 #contact {
     text-align: center;
+    padding: 40px 20px;
+    background-color: #e0f7fa; /* Light blue background for contact section */
     margin: 20px 0;
+    border-radius: 8px;
 }
 
 footer {
-    background-color: #333;
+    background-color: #333; /* Dark grey footer */
     color: white;
     padding: 30px 0;
     text-align: center;
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.footer-content p {
+    margin: 5px 0; /* Add a bit of margin between the two paragraphs */
 }
 
 .footer-content a {
