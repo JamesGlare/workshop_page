@@ -112,11 +112,15 @@ body {
 
 .sponsor-grid img {
     width: auto; /* Width of the sponsor images */
-    height: 200px; /* Maintains the aspect ratio */
+    height: 150px; /* Maintains the aspect ratio */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow around each image */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
 }
-
+@media (max-width: 600px) {
+    .sponsor-grid img {
+        height: 50px; /* Smaller height for small screens */
+    }
+}
 .sponsor-grid img:hover {
     transform: scale(1.05); /* Slightly enlarge the image */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
