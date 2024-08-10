@@ -17,10 +17,7 @@ body {
 .top {
     background: url('images/big_banner.jpg') no-repeat center center;
     background-size: cover; /* This ensures the banner image covers the entire div */
-    padding: 10px 0; /* This gives some space above and below the content inside the .top div */
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
+    padding: 10px 0; 
     z-index: 1000; /* Ensures the navbar stays above other content */
 }
 
