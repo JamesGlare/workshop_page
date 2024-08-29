@@ -109,6 +109,49 @@ body {
 .submission-box a:hover {
     color: #003366; /* Darker blue on hover */
 }
+.speakers-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 20px 0;
+    background-color: #f9f9f9; /* Light background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Ensure rounded corners are visible */
+}
+
+.speakers-table tr {
+    margin-bottom: 20px; /* Space between rows */
+    display: block; /* Make rows block elements to apply margin */
+}
+
+.speakers-table td {
+    padding: 20px;
+    vertical-align: top;
+    border-bottom: 1px solid #ddd; /* Light border between rows */
+}
+
+.speakers-table tr:last-child td {
+    border-bottom: none; /* Remove border from the last row */
+}
+
+.speakers-table img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for images */
+}
+
+.speakers-table p {
+    margin: 0;
+}
+
+.speakers-table p strong {
+    font-size: 1.2em; /* Slightly larger font for names */
+    color: #333333; /* Darker color for names */
+}
 
 .sponsor-grid {
     display: flex; /* Makes the container a flexible box layout */
